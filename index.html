@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>WEATHER APP</h1>
+        <div>
+            <input type="text" id="input" placeholder="Enter city name">
+            <button id="search" onclick="searchByCity()">Search</button>
+        </div>
+    </div>
+
+    <main>        
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="/weathericon.png" alt="" id="img">
+                <p id="temperature">26 °C</p>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+            <p id="updated" style="font-size: 14px; margin-top: 8px;"></p>
+        </div>
+        <div class="divider1"></div>
+
+        <div class="forecstH">
+            <p class="cast-header">Upcoming forecast</p>
+            <div class="templist">
+                <!-- JavaScript will populate hourly forecast here -->
+            </div>
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header">Next 4 days forecast</p>
+        <div class="weekF">
+            <!-- JavaScript will populate daily forecast here -->
+        </div>
+    </div>
+
+    <script src="/weather.js"></script>
+</body>
+</html>
